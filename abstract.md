@@ -29,10 +29,7 @@ While this flexibility is advantageous in terms of performance for the CPython
 interpreter it does create additional work for any project attempting to
 consume the bytecode.  For Numba this requires significant work every year to
 support the latest Python minor version and it is obvious that this approach
-does not scale. While the work is indeed principled, usually some decisions
-need to be taken which lead to an increase in Numba's code complexity. For
-example, sometimes bytecode sequences need to be rewritten, such that they
-match an older minor version of Python where the bytecode sequence was simpler.
+does not scale.
 
 In this talk I will introduce a new approach, based on formal methods, to
 regularize (or canonicalize) Python bytecode and thus transform any bytecode
@@ -53,8 +50,8 @@ and this significantly simplifies much of the dataflow analysis.
 
 Looking into the future, I will present potential opportunities for tools such
 as JAX, PyTensor and others to consume this form.  This would establish the
-form as a common intermediary representation of the bytecode for any given
-minor version.  This means that consumers would receive a computationally
+form as a common intermediary representation of the bytecode
+This means that consumers would receive a computationally
 equivalent CFG representation irrespective of the Python minor version used.
 Ideally the Python minor bytecode version would thus be abstracted away leading
 to simplification for any tools attempting to consume a Python program in its
