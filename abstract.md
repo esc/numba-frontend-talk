@@ -60,11 +60,12 @@ opportunities to open gateways into the future and will provide us with ample
 possibilities for sustained research and innovation.
 
 Furthermore, this approach is part of a larger effort to transform the Numba
-project into a compiler building toolkit, that will become a framework to
-enable the creation of highly specialised compilers for the dawning era of diverse
-and heterogeneous silicon that our civilisation is venturing into. I will
-conclude the talk with an outlook of potential innovations in compiler
-technologies during the next decade and beyond!
+project into a modular compiler toolkit. To conclude I will outline how this
+enables the creation of highly specialised compilers for a number of
+scientific-computing use-cases and allows application developers and scientists
+to fully leverage the various types of heterogeneous silicon, beyond
+multi-core, that are currently emerging.
+
 
 [1] Bahmann, H., Reissmann, N., Jahre, M., & Meyer, J. C. (2015). Perfect
 reconstructability of control flow from demand dependence graphs. ACM
