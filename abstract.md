@@ -11,9 +11,7 @@ Just-in-time (JIT) compile Python functions. The Python bytecode implementation
 release, resulting in additional complexity for Numba to support these changes.
 In this talk I will present a new approach to regularize bytecode based on
 `RVSDG`s (Regionalized State Value Dependency Graphs) which will simplify
-adding support for new Python _minor_ versions to Numba.  I will conclude the
-talk with an outlook of potential innovations in compiler technologies for
-scientific computing use-cases.
+adding support for new Python _minor_ versions to Numba.
 
 Description
 -----------
