@@ -45,22 +45,17 @@ region). As a result much of Numba's  bytecode resequencing (peephole
 dataflow analysis.
 
 In this talk I will present the theoretical approach to regularizing bytecode
-based on RVSDGs, supplemented by examples and snippets from the Numba code-base.
-I will further explain how this new form allows Numba to be specialised for
-any given Python minor version and how it relinquishes the need for complex
-code. Looking into the future, I will present potential opportunities for
-tools such as JAX, PyTensor and others to consume this form. This would
-establish the form as a common intermediary representation of the bytecode for
-any given minor version.  This means that consumers would receive a
-computationally equivalent CFG representation irrespective of the Python minor
-version used.  Ideally the Python minor bytecode version would thus be
-abstracted away leading to simplification for any tools
-attempting to consume a Python program in its bytecode representation.
-Furthermore, the implementation has been designed in a way that the payload
-itself can be abstracted away, such that the representation is independent of
-Python itself. Thus it is conceivable to transform the bytecode of any other
-programming language or perhaps even an alternative program representation such
-as an Abstract Syntax Tree (AST) into the new form. This technique will enable
+based on RVSDGs, supplemented by examples and snippets from the Numba
+code-base.  I will further explain how this new form allows Numba to be
+specialised for any given Python minor version and how it relinquishes the need
+for complex code. Looking into the future, I will present potential
+opportunities for tools such as JAX, PyTensor and others to consume this form.
+This would establish the form as a common intermediary representation of the
+bytecode for any given minor version.  This means that consumers would receive
+a computationally equivalent CFG representation irrespective of the Python
+minor version used.  Ideally the Python minor bytecode version would thus be
+abstracted away leading to simplification for any tools attempting to consume a
+Python program in its bytecode representation.  This technique will enable
 opportunities to open gateways into the future and will provide us with ample
 possibilities for sustained research and innovation.
 
