@@ -7,11 +7,11 @@ Abstract
 The advent of the new Python release policy has resulted in a number of
 challenges for the Numba project, as the Python bytecode is the input to
 Just-in-time (JIT) compile Python functions. The Python bytecode implementation
--- however -- is subject to constant changes with every new Python _minor_
+-- however -- is subject to constant changes with every new Python minor
 release, resulting in additional complexity for Numba to support these changes.
 In this talk I will present a new approach to regularize bytecode based on
 `RVSDG`s (Regionalized State Value Dependency Graphs) which will simplify
-adding support for new Python _minor_ versions to Numba.
+adding support for new Python minor versions to Numba.
 
 Description
 -----------
